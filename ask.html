@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Pixel Planets</Title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
+
+	</head>
+	
+	<body>
+		<div class="banner">
+			<i id ="contact" class="fa fa-inbox" style="font-size:25px;color:gray; background-color: transparent; width:15px;"></i>
+			<a id="contact" href="#popup1"> Follow pixelplanets </a>
+			<div id="popup1" class="overlay">
+    			<div class="popup">
+    			<i class="fa fa-check" style="font-size:30px;color:gray;margin-left:50%; "></i><h2>You are now following pixelplanets!</h2>
+        		<a class="close" href="#">&times;</a>
+   			 </div>
+			</div>
+
+			<div class="menu">
+					<i class="fa fa-home" style="font-size:25px;color:gray;"></i>
+					<br />
+					<i class="fa fa-search" style="font-size:25px;color:gray;"></i>
+					<br>
+					<i class="fa fa-plus" style="font-size:25px;color:gray;"></i>
+					<br>
+					<i class="fa fa-comments" style="font-size:25px;color:gray;"></i>
+					<br>
+					<i class="fa fa-user" style="font-size:25px;color:gray;"></i>
+
+			</div>
+			<br />
+			<h1>Pixel Planets</h1>
+			<!--<p id="user">@space.girl</p>-->
+			<p id="intro">Welcome to my little space on the internet!
+				<br /> 👽🌙💫
+			</p>
+		</div>
+		<div class="container">
+			<img style="margin-top:-50px; background-color:gray; border-radius: 50px; width:100px; margin-left:150px; border:4px solid #003A69; clear:right; "src="profile.gif">
+			<br />
+			<a class="profileMenu" href="index.html"> POSTS </a>
+			<a class="profileMenu" style="border-bottom:2px solid pink;" href="#"> ASK ME </a>
+			<a class="profileMenu" href="#"> MENTIONS </a>
+
+			<!--<div style="color:white;margin-top: 30px; font-size:.6rem; margin-left: 20px;" class="date">Sept. 18, 2019</div>
+			<div style="color:white;margin-top: 30px; font-size:.6rem; margin-left: 20px;" class="date">Sept. 18, 2019</div>
+			<div style="color:white;margin-top: 30px; font-size:.6rem; margin-left: 20px;" class="date">Sept. 18, 2019</div>-->
+			<br />
+
+			<div class="textAreaMenu">
+				<i class="fa fa-times" style="font-size:20px;color:black;padding:15px;"></i>
+				<i class="fa fa-bold" style="font-size:15px;color:black;padding:15px;"></i>
+				<i class="fa fa-italic" style="font-size:15px;color:black;padding:15px;"></i>
+				<i class="fa fa-link" style="font-size:15px;color:black;padding:15px;"></i>
+				<i class="fa fa-image" style="font-size:15px;color:black;padding:15px;"></i>
+				<i class="fa fa-paragraph" style="font-size:15px;color:black;padding:15px;"></i>
+				<button id="add"> Upload </button>								<hr style="width:100%; background-color: gray; height:;
+				">
+
+
+			</div>
+
+			<input type="text" id="post" placeholder="What's on your mind?" type="reset">
+			
+			<br />
+			
+				
+			<div id=newMessage> 
+				
+				<p>
+				</p>	
+			</div>
+		</div>
+		<script type="text/javascript" src="javascript.js"></script>
+	</body>
+
+</html>
+
+

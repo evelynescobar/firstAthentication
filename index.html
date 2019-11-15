@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Pixel Planets</Title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
+
+	</head>
+	
+	<body>
+		<div class="banner">
+			<i id ="contact" class="fa fa-inbox" style="font-size:25px;color:gray; background-color: transparent; width:15px;"></i>
+
+			<a id="contact" onclick="following()" href="#popup1"> <span id="setFollow" >Follow pixelplanets</span> </a>
+			<div id="popup1" class="overlay">
+    			<div class="popup">
+    			<i class="fa fa-check" style="font-size:30px;color:gray;margin-left:50%; "></i><h2>You are now following pixelplanets!</h2>
+        		<a class="close" href="#">&times;</a>
+   			 </div>
+			</div>
+
+			<div class="menu">
+					<i class="fa fa-home" style="font-size:25px;color:gray;"></i>
+					<br />
+					<i class="fa fa-search" style="font-size:25px;color:gray;"></i>
+					<br>
+					<i class="fa fa-plus" style="font-size:25px;color:gray;"></i>
+					<br>
+					<i class="fa fa-comments" style="font-size:25px;color:gray;"></i>
+					<br>
+					<i class="fa fa-user" style="font-size:25px;color:gray;"></i>
+
+			</div>
+			<br />
+			<h1>Pixel Planets</h1>
+			<!--<p id="user">@space.girl</p>-->
+			<p id="intro">Welcome to my little space on the internet!
+				<br /> 👽🌙💫
+			</p>
+		</div>
+		
+		<div id="modalOverlay">
+			<div class="modalPopup">
+			<div class="modalContent">
+					<div id="display-1">
+						<p style="margin-top:30px; text-align:center;">To view this profile, please login or sign-up.</p>
+
+						<p class="small">Email</p>
+						 <input style="width:100%; border-bottom: solid blue 2px; height: 5px;" type="text" id="loginEmail" type="reset">
+							<br />
+						<p class="small" style="margin-top: 10px;">Password</p>
+						<input style="width:100%; border-bottom: solid blue 2px; height: 5px;" type="text" id="loginPassword" type="reset">
+
+					 	<button class="buttonStyle" id="checkUser">Sign In</button>
+					 	<div id="errorMessages"></div>
+
+					 	<p style="margin-top:10px; text-align:center; float:left; clear:both; font-size: 10px;">Not a member? <a id ="signUpForm" style="color:blue; cursor: pointer; clear:both;">Sign up now</a></p>
+					</div>
+					
+					<div id="hidden-1">
+						<p style="margin-top:30px; text-align:center;">Create an account</p>
+						<p class="small" style="margin-top: 10px; float:left;">First Name</p>
+						 	<input style="width:100%; border-bottom: solid blue 2px; height: 5px;" type="text" id="f_name" type="reset">
+							<br />
+						<p class="small" style="margin-top: 10px;">Last Name</p>
+						 	<input style="width:100%; border-bottom: solid blue 2px; height: 5px;" type="text" id="l_name" type="reset">
+							<br />
+						<p class="small" style="margin-top: 10px;">Email</p>
+							<input style="width:100%; border-bottom: solid blue 2px; height: 5px;" type="text" id="email" type="reset">
+							<br />
+						<p class="small" style="margin-top: 10px;">Password</p>
+							<input style="width:100%; border-bottom: solid blue 2px; height: 5px;" type="text" id="password" type="reset">
+						<button class="buttonStyle" id="addUser">Create my account</button>
+					</div>
+			</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<img style="margin-top:-50px; background-color:gray; border-radius: 50px; width:100px; margin-left:150px; border:4px solid #003A69; clear:right; "src="profile.gif">
+			<br />
+			<a style="border-bottom:2px solid pink;" class="profileMenu" href="#"> POSTS </a>
+			<a class="profileMenu" href="#"> ASK ME </a>
+			<a class="profileMenu" href="#"> MENTIONS </a>
+			<br />
+			
+	
+			<input style="margin-top:20px; width:38%;" type="text" id="name" placeholder="User Name..." type="reset">
+			<br />
+			<input style="margin-top:20px; width:30%;" type="text" id="date" placeholder="Date..." type="reset">
+			<br />
+			<input style="margin-top:9px; width:30%;" type="text" id="location" placeholder="Location" type="reset">
+			<br />
+			<input style="margin-top:0px; width:99%;" type="text" id="pTitle" placeholder="Title..." type="reset">
+			<br />
+			<input style="margin-top:0px; width:99%; height:auto;" type="pBody" id="pBody" placeholder="Body..." type="reset">
+			
+			<button id="add" onclick="reset()"> Post </button>
+			
+			<div id=newMessage> 
+			
+
+		<br />
+
+		<!--	<div class="blogPost">
+			<img style="margin-top:10px; background-color:gray; border-radius: 50px; width:50px; margin-left:20px; border:4px solid #003A69; clear:right; float:left;"src="profile.gif">
+			<p class="contactID" style="font-size:.9rem;"> 
+			Pixel Planets 
+			<br />
+			<span style="color:gray; font-size:.8rem;"> September 22, 2019</span></p>
+
+			!______<hr style="width:100%;"> ____!
+			<img src="moon.png" style="width:100%;">
+			<div class="textAreaMenu">
+				<i class="fa fa-heart" style="font-size:20px;color:black;padding:15px;"></i>
+				<i class="fa fa-comments" style="font-size:20px;color:black;padding:15px;"></i>
+				<i class="fa fa-retweet" style="font-size:20px;color:black;padding:15px;"></i>
+			</div>
+			<p span style="color:black; font-size:.8rem; margin-bottom: 0px; margin-left: 10px;text-align: left;"> <span style="color:gray;">Pixelplanets: </span> I suppose one day I'll all make sense.</span></p>
+			<i class="fa fa-heart" style="font-size:10px;color:black;padding:10px; float: left;"></i>
+
+
+			<p span style="color:black; font-size:.8rem; text-align: left; padding-top:7px;float: left;"> 122 Likes</p>
+
+			<i class="fa fa-retweet" style="font-size:12px;color:black;padding:10px; float:left;"></i>
+			<p span style="color:black; font-size:.8rem; text-align: left;margin-left: 10px; padding-top:7px;"> 4 Reposts</p>
+			<hr style="background-color:#E3E6E8;width:auto%;">
+			<div id=newMessage> 
+				
+					
+		
+		</div>
+			<div class="input" style="background-color:white; height:50px;">
+			<input type="text" id="post" placeholder="Say something..." type="reset">
+
+		<button id="add" onclick="reset()"> Post </button>
+		<button id="edit" onclick="reset()"> Edit </button>
+		<button id="delete" onclick="reset()"> Delete </button>
+			</div> 
+			-->
+			</div>
+
+
+			<div id="hidden">
+			<input style="margin-top:20px; width:37.9%; border:.3px solid lavender; " type="text" id="name-edit" type="reset">
+			<br />
+			<input style="margin-top:20px; width:30%;border:.3px solid lavender;" type="text" id="date-edit" type="reset">
+			<br />
+			<input style="margin-top:20px; width:30%;border:.3px solid lavender;" type="text" id="location-edit" type="reset">
+			<br />
+			<input style="margin-top:0px; width:99%;border:.3px solid lavender;" type="text" id="pTitle-edit" type="reset">
+			<br />
+			<input style="margin-top:0px; width:99%;border:.3px solid lavender;
+			word-wrap: break-word; height: auto;" type="pBody" id="pBody-edit" type="reset">
+			<button id="submitEditButton">update</button>
+			</div>
+		<script type="text/javascript" src="javascript.js"></script>
+	</body>
+
+</html>
+
+
