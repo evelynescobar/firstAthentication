@@ -1,8 +1,4 @@
-# f19-authentication-evelynescobar
-f19-authentication-evelynescobar created by GitHub Classroom
-# My Project
-
-## Authentication
+#Authentication is important because it enables organizations to keep their networks secure by permitting only authenticated users (or processes) to access its protected resources, which may include computer systems, networks, databases, websites and other network-based applications or services. I created a login and sign up form for my "social media" project. I used: Node.js Vue.js CSS and HTML. I used MySqlite for my Database.
 
 **Posts**
 
