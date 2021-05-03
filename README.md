@@ -49,3 +49,6 @@ Create user               | POST   | /newUsers
 Start Session             | POST   | /sessions
 Update posts member       | PUT    | /posts/*\<id\>*
 Delete posts member       | DELETE | /posts/*\<id\>*
+
+
+<img src="auth.png">
